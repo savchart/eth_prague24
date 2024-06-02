@@ -49,6 +49,8 @@ This data is used to build and refine the dynamic fee model for Fee Optimizer. B
 
 ### Approach 1: Optimization Based on Volume, Liquidity, and Gas Price
 
+![Approach 1](assets/optimiz.png)
+
 #### Step 1: Define Variables
 - Volume (V): The total volume of transactions.
 - Liquidity (L): The available liquidity in the system.
@@ -104,6 +106,9 @@ The optimal fee \( F \) in this simplified example is:
 \( \max_{F} \left( 1000 \cdot 0.1 - 0.21 \right) = 99.79 \)
 
 ### Approach 2: Normalization-Based Dynamic Fee Calculation
+
+![Approach 2](assets/2.png)
+
 
 The provided Python code snippet performs the following steps to calculate a dynamic fee based on normalized values of certain parameters:
 
