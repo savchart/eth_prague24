@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "eth-prague-hack"
+version = "0.1.0"
+description = ""
+authors = ["savchart <savchart@fit.cvut.cz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+pandas = "^2.2.2"
+subgrounds = "^1.8.1"
+matplotlib = "^3.9.0"
+scipy = "^1.13.1"
+scikit-learn = "^1.5.0"
+xgboost = "^2.0.3"
+optuna = "^3.6.1"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
