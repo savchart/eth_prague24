@@ -183,7 +183,24 @@ You need to have three smart contracts: `AggregatorV3Interface.sol`, `MarketData
 
 #### Step 2: Deploy Smart Contracts
 
+## Conclusion
 
+### Dynamic Fee Distribution
+The distribution of dynamic fees calculated using the normalization-based approach shows that most of the fees are concentrated between 0.0005 and 0.0015. The histogram below illustrates the frequency of different dynamic fee values, highlighting the tendency towards lower fee values. This ensures that the fees remain competitive while protecting liquidity providers from impermanent loss.
+
+![Distribution of Dynamic Fees](assets/distribution.png)
+
+### Revenue Impact
+The revenue comparison before and after the implementation of the Fee Optimizer demonstrates a significant improvement in total fees collected. As shown in the bar chart below, the optimized fee model results in higher total revenue, indicating the effectiveness of the dynamic fee adjustment algorithm in maximizing returns.
+
+![Revenue Comparison Before and After Optimization](assets/revenue.png)
+
+### Integration Flow
+The integration flow of the Fee Optimizer within the DeFi ecosystem is depicted in the diagram below. It shows the process of swapping assets, invoking the FlexFee hook before the swap, and updating the dynamic fee based on real-time market data from Chainlink and the custom API.
+
+![Integration Flow](assets/diagram.png)
+
+In summary, the Fee Optimizer successfully enhances the fee structure within the ETH/USDC pool by dynamically adjusting fees based on market conditions, thereby improving revenue and protecting liquidity providers.
 
 
 
